@@ -15,7 +15,7 @@ git clone git@github.com:cardbinder/storage.git
 docker-compose up -d
 ```
 
-Allow your other compose projects to use these databases by adding the following:
+Allow your other compose projects to use these databases by adding networks and/or volumes as needed:
 
 ```yaml
 services:
@@ -23,9 +23,17 @@ services:
     networks:
     - default
     - storage_default
+    volumes:
+    - storage_bundle:/usr/local/bundle
 
 networks:
   storage_default:
+    external: true
+
+volumes:
+  storage_node:
+    external: true
+  storage_bundle:
     external: true
 ```
 
