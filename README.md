@@ -39,5 +39,8 @@ volumes:
 
 ## Reading
 
-Learn about [postgres](https://www.postgresql.org/docs/12/intro-whatis.html).
-Learn about [redis](https://redis.io/documentation).
+Learn about [Docker](https://docs.docker.com/compose/gettingstarted).
+
+Learn about [Postgres](https://www.postgresql.org/docs/12/intro-whatis.html).
+
+Learn about [Redis](https://redis.io/documentation).
